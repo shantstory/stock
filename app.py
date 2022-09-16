@@ -12,7 +12,7 @@ start = '2010-01-01'
 end = '2019-12-31'
 
 st.title('stock Trend Prediction')
-user_input=st.text_input('Enter stock Ticker','APPL')
+user_input=st.text_input('Enter stock Ticker','AAPL')
 df = pdr.get_data_yahoo(user_input, start="2010-01-01", end="2019-12-31")
 st.subheader('Date from 2010 - 2019')
 st.write(df.describe())
